@@ -21,3 +21,7 @@ In interiorul buclei infinite, mai intai verificam daca e vreo tasta "apasata". 
 ## Recunoasterea dispozitivului USB
 
 Atunci cand este conectata la un calculator folosind portul marcat **KL25Z**, placa de dezvoltare va fi recunoscuta ca un device **Mbed Audio**. Acesta poate fi apoi selectat in orice DAW ca dispozitiv de intrare MIDI. Mai jos se pot observa mesajele primite de software-ul MIDIViewer, care a fost folosit si pentru debugging in realizarea aplicatiei. 
+
+## Posibilitati de imbunatatire a programului
+
+Standardul MIDI permite trimiterea de mai multe informatii, pe langa valoarea notei apasate. Unul dintre cei mai imprtanti parametri este forta cu care este apasata tasta (**velocity** in mesajul MIDI). Acest parametru ofera expresivitate si imita mai bine comportamentul unui instrument clasic. In implememtarea curenta, atingerea tastelor este un eveniment binar, insa circuitul poate fi adaptat astfel incat sa suporte si niveluri diferite de atingere. Pastrand tastele metalice, poate fi implementat un circuit capacitiv, care poate detecta si dimensiunea suprafetei atinse prin modificarea timpului de crestere al tensiunii pe tasta respectiva. Astfel, moduland suprafata pe care este atinsa tasta, poate fi modulat parametrul **velocity**.
