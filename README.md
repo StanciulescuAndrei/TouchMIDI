@@ -21,6 +21,7 @@ In interiorul buclei infinite, mai intai verificam daca e vreo tasta "apasata". 
 ## Recunoasterea dispozitivului USB
 
 Atunci cand este conectata la un calculator folosind portul marcat **KL25Z**, placa de dezvoltare va fi recunoscuta ca un device **Mbed Audio**. Acesta poate fi apoi selectat in orice DAW ca dispozitiv de intrare MIDI. Mai jos se pot observa mesajele primite de software-ul MIDIViewer, care a fost folosit si pentru debugging in realizarea aplicatiei. 
+![Notele transmise](docs/midiview.png)<br>
 
 ## Posibilitati de imbunatatire a programului
 
